@@ -1,0 +1,162 @@
+:root {
+    --primaryColor: #3d708a;
+    --secondaryColor: #6f9db3;
+    --gradientColor: linear-gradient( to right , #6f9db3 , #3E718A );
+    --whiteColor: #fff;
+    --blackColor: #1b2d36;
+    --textColor: #58585f;
+    --whiteColorDeam: #ededed;
+    --greyText: #bebebe;
+    --inputColor: #efefef;
+    --bodyColor: #f0f0f6;
+    --cardBg: #fff;
+    --cardHover: #fff;
+}
+.info {
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.infoTitle .title {
+    position: relative;
+    width: max-content;
+    margin: 1rem 0;
+    color: var(--textColor);
+    z-index: 2;
+}
+.infoTitle .title::after {
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    right: 0;
+    height: 5px;
+    width: 120px;
+    background: var(--secondaryColor);
+    z-index: -1;
+}
+.infoContent {
+    justify-content: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat( 3 , 1fr );
+}
+.infoContent .infoBox {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    row-gap: 10px;
+    border-radius: 10px;
+    background: var(--cardBg);
+    box-shadow: 0 2px 4px rgba(140, 140, 141, .549);
+    overflow: hidden;
+}
+.infoContent .infoBox:hover {
+    background: var(--cardHover);
+    box-shadow: 0 4px 4px rgba(85, 85, 114, .549);
+    transition: .5s ease-in-out;
+}
+.infoContent .infoBox .imgInfo {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+.infoContent .infoBox .imgInfo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 2s ease-in-out;
+}
+.infoContent .infoBox .imgInfo img:hover {
+    transform: scale(1.1);
+}
+.infoContent .cardInfo {
+    padding: 1rem;
+}
+.infoContent .cardInfo .cardTitle{
+    font-size: 1.25rem;
+    color: var(--blackColor);
+}
+.infoContent .cardInfo .continent {
+    gap: .5rem;
+}
+.infoContent .cardInfo .icon {
+    font-size: 18px;
+    color: var(--textColor);
+    
+}
+.infoContent .cardInfo .name {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--textColor);
+}
+.infoContent .cardInfo .fees {
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-top: 1.5px solid var(--greyText);
+    border-bottom: 1.5px solid var(--greyText);
+    
+}
+.infoContent .cardInfo .fees .grade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColor);
+    max-width: 100%;
+    line-height: 20px;
+   
+}
+.infoContent .cardInfo .fees .grade small {
+    color: var(--whiteColor);
+    background: var(--gradientColor);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1px 10px;
+    font-size: 10px;
+}
+.infoContent .cardInfo .fees .price {
+    color: var(--blackColor);
+    font-size: 2rem;
+}
+.infoContent .cardInfo .desc {
+    color: var(--textColor);
+    font-size: 13.5px;
+    font-weight: 500;
+}
+.infoContent .cardInfo .btn {
+    color: var(--whiteColor);
+    font-weight: 600;
+    gap: .5rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+.infoContent .cardInfo .btn .icon {
+    font-size: 18px;
+    align-self: center;
+    color: var(--whiteColor);
+}
+
+/**** Media Queries   **************/
+@media screen and (max-width: 840px) {
+    .infoContent {
+        grid-template-columns: repeat( 2 , 1fr );
+    }
+    .infoContent .infoBox {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .infoTitle .title {
+        font-size: 1.5rem;
+    }
+    .infoTitle .title::after {
+        width: 155px !important;
+    }
+    .infoContent {
+        grid-template-columns: repeat( 1 , 1fr );
+    }
+    .infoContent .infoBox {
+        height: auto;
+    }
+}
+

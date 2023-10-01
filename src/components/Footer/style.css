@@ -1,0 +1,205 @@
+:root {
+    --primaryColor: #3d708a;
+    --secondaryColor: #6f9db3;
+    --gradientColor: linear-gradient( to right , #6f9db3 , #3E718A );
+    --whiteColor: #fff;
+    --blackColor: #1b2d36;
+    --textColor: #58585f;
+    --whiteColorDeam: #ededed;
+    --greyText: #bebebe;
+    --inputColor: #efefef;
+    --bodyColor: #f0f0f6;
+    --cardBg: #fff;
+    --cardHover: #fff;
+}
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 2rem 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .videoBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.footer .videoBox video {
+    height: 100%;
+    object-fit: cover;
+}
+.footer .videoBox video::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(10 , 84 , 107 , .307);
+    mix-blend-mode: multiply;
+}
+.footer .footContent {
+    height: max-content;
+    width: 100%;
+    padding: 2rem initial;
+    margin: auto; 
+    row-gap: 2rem;
+    z-index: 100;
+}
+.footer .footContent .contactInfo { 
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.footer .footContent .text small {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--whiteColor);
+}
+.footer .footContent .text h2 {
+    font-size: 1.8rem;
+    color: var(--whiteColor);
+}
+.footer .footContent .inputContent {
+    flex-direction: row;
+    gap: 1rem;
+}
+.footer .footContent .inputContent input {
+    padding: .5rem .6rem;
+    width: 100%;
+    border-radius: 3rem;
+    border: 1px solid var(--whiteColor);
+    outline: none;
+    background: transparent;
+    color: var(--whiteColor);
+}
+.footer .footContent .inputContent input::placeholder {
+    color: var(--whiteColor);
+    opacity: .5;
+}
+.footer .footContent .inputContent .btn {
+    color: var(--whiteColor);
+    width: 100%;
+    justify-content: center;
+    gap: .5rem;
+    font-weight: 500;
+}
+.footer .footContent .inputContent .icon {
+    font-size: 18px;
+}
+.footer .footContent .footerCard {
+    position: relative;
+    width: 100%;
+    background: var(--bodyColor);
+    padding: 1rem 1rem 4rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    overflow: hidden;
+}
+.footer .footContent .footerCard .footerIntro {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-basis: 50%;
+    row-gap: .5rem;
+}
+.footer .footerCard .footerIntro .logo .logoIcon {
+    color: var(--blackColor);
+    font-weight: 600;
+    
+}
+.footer .footerCard .footerIntro .logo .logoIcon .icon {
+    color: var(--primaryColor);
+    font-size: 25px;
+    margin-right: 10px; 
+}
+.footer .footerCard .footerIntro .footerParagraph {
+    color: var(--textColor);
+    font-size: 13px;   
+}
+.footer .footerCard .footerIntro .footerSocials {
+    column-gap: .5rem;
+}
+.footer .footerCard .footerIntro .footerSocials .icon {
+    color: var(--blackColor);
+    font-size: 20px;   
+}
+.footer .footerCard .footerIntro .footerSocials .icon:hover {
+    color: var(--primaryColor);
+}
+.footer .footerCard .footerLinks {
+    width: 100%;
+    flex-basis: 50%;
+    justify-content: space-between;
+    gap: 1rem;
+    grid-template-columns: repeat(2 , 1fr);  
+}
+.footer .footerCard .footerLinks .linkGroup span {
+    color: var(--blackColor);
+    font-weight: 600;
+    margin-bottom: .5rem;
+    display: block;
+}
+.footer .footerCard .footerLinks .footerList {
+    font-size: 15px;
+    color: var(--textColor);
+    transition: .3s ease-in-out; 
+}
+.footer .footerCard .footerLinks .footerList:hover {
+    color: var(--primaryColor);
+    transform: translateX(7px);
+}
+.footer .footerCard .footerLinks .footerList .icon {
+    font-size: 15px;
+    color: var(--greyText);
+}
+.footer .footerCard .footerLinks .footerList .icon:hover {
+    color: var(--secondaryColor);
+}
+.footer .footerCard  .footerCopy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--secondaryColor);
+    padding: .5rem 2rem;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.footer .footerCard  .footerCopy small {
+    font-size: 10px;
+    color: var(--whiteColor);
+}
+
+/**** Media Queries   **************/
+
+
+@media screen and (max-width: 660px) {
+    .footer .footContent .contactInfo { 
+        flex-direction: column;
+    }
+    .footer .footContent .inputContent {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: max-content;
+    }
+    .footContent .footerCard {
+        display: grid;
+        grid-template-columns: repeat( 1 , 1fr );
+    }
+    .footContent .footerCard .footerLinks {
+        margin-bottom: 1rem;
+    }
+    .footer .footerCard  .footerCopy {
+        flex-direction: column;
+        text-align: center;
+    }
+}

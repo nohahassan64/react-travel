@@ -1,0 +1,206 @@
+:root {
+    --primaryColor: #3d708a;
+    --secondaryColor: #6f9db3;
+    --gradientColor: linear-gradient( to right , #6f9db3 , #3E718A );
+    --whiteColor: #fff;
+    --blackColor: #1b2d36;
+    --textColor: #58585f;
+    --whiteColorDeam: #ededed;
+    --greyText: #bebebe;
+    --inputColor: #efefef;
+    --bodyColor: #f0f0f6;
+    --cardBg: #fff;
+}
+.home {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(47 , 106 , 127);
+    mix-blend-mode: hard-light;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.homeContent {
+    width: 100%;
+    height: max-content;
+    padding: 8rem 1.5rem;
+    margin: auto;
+    color: var(--whiteColor);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.homeText {
+    padding: 2rem 0;
+}
+.homeText  span {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.homeText  h1 {
+    font-size: 1.8rem;
+    position: relative;
+}
+.homeCard {
+    position: relative;
+    border-radius: 10px;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background: var(--whiteColor);
+}
+.input {
+    height: 40px;
+    padding: 0 1rem;
+    border-radius: 3rem;
+    background: var(--inputColor);
+}
+input[type=range] {
+    background: blue;
+}
+input {
+    font-size: 13px;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+}
+.searchOptions .icon {
+    margin-left: 10px;
+    font-size: 18px;
+    color: var(--primaryColor) !important;
+}
+label {
+    display: block;
+    color: var(--textColor);
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.label_total {
+    justify-content: space-between;
+    align-items: center;
+}
+.total {
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: var(--textColor);
+}
+.searchOptions {
+    position: absolute;
+    bottom: -.7rem;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--gradientColor);
+    width: max-content;
+    padding: 5px 1rem;
+    column-gap: .8rem;
+    justify-content: center;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+.searchOptions:hover {
+    background: var(--secondaryColor);
+}
+
+.searchOptions .icon {
+    font-size: 18px;
+}
+.searchOptions span {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.homeIcons {
+    width: 100%;
+    justify-content: space-between;
+}
+.homeIcons .icon {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 5px;
+    color: var(--whiteColor);
+}
+.homeIcons .icon:hover {
+    color: var(--primaryColor);
+}
+
+/**** Media Queries   **************/
+@media screen and (min-width: 500px) {
+    .homeContent .homeText span {
+        font-size: 16px;
+    }
+    .homeContent .homeText h1 {
+        width: max-content;
+        font-size: 2.3rem;
+        position: relative;
+    }
+    .homeContent .homeText h1::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        height: 5px;
+        width: 145px;
+        background: var(--secondaryColor);
+        z-index: -1;
+    }
+    .homeContent .homeCard {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media screen and (min-width: 660px) {
+    .homeContent .homeCard {
+        grid-template-columns: repeat(3 , 1fr);
+        padding: 2rem 1rem;
+    }
+}
+@media screen and (min-width: 940px) {
+    .home {
+        height: 85vh;
+    }
+}
+@media screen and (min-width: 1240px) {
+    .home {
+        height: 95vh;
+    }
+    .home .homeContent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .homeContent .homeCard {
+        grid-template-columns: repeat(3 , 1fr);
+        padding: 2rem 1rem;
+    }
+    .homeContent .homeCard input {
+        margin-bottom: 1rem;
+    }
+    .homeContent .homeCard .searchOptions {
+        bottom: -1rem;
+        padding: 8px 1rem;
+    }
+    .homeContent .searchOptions span {
+        font-size: 17px;
+    }
+}
