@@ -21,17 +21,17 @@ export const dataInfo = [
     {
         id: 2,
         img: twoImg,
-        title: 'Bora Bora',
-        location: 'New Zelanda',
+        title: 'Machu Picchu',
+        location: 'Pero',
         grade: 'CUL TURAL RELAX',
-        fees: '$700',
+        fees: '$600',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab dicta maxime id facere, molestiae laboriosam et perferendis beatae maiores ipsa, dolores quae doloribus optio fuga ipsam sint atque repudiandae.'
     },
     {
         id: 3,
         img: threeImg,
-        title: 'Bora Bora',
-        location: 'New Zelanda',
+        title: 'Great Barrier Reef',
+        location: 'Austrilia',
         grade: 'CUL TURAL RELAX',
         fees: '$700',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab dicta maxime id facere, molestiae laboriosam et perferendis beatae maiores ipsa, dolores quae doloribus optio fuga ipsam sint atque repudiandae.'
@@ -39,55 +39,55 @@ export const dataInfo = [
     {
         id: 4,
         img: fourImg,
-        title: 'Bora Bora',
-        location: 'New Zelanda',
+        title: 'Cappadocia',
+        location: 'Turkey',
         grade: 'CUL TURAL RELAX',
-        fees: '$700',
+        fees: '$800',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab dicta maxime id facere, molestiae laboriosam et perferendis beatae maiores ipsa, dolores quae doloribus optio fuga ipsam sint atque repudiandae.'
     },
     {
         id: 5,
         img: fiveImg,
-        title: 'Bora Bora',
-        location: 'New Zelanda',
+        title: 'Guanojuato',
+        location: 'Mexico',
         grade: 'CUL TURAL RELAX',
-        fees: '$700',
+        fees: '$1100',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab dicta maxime id facere, molestiae laboriosam et perferendis beatae maiores ipsa, dolores quae doloribus optio fuga ipsam sint atque repudiandae.'
     },
     {
         id: 6,
         img: sixImg,
-        title: 'Bora Bora',
-        location: 'New Zelanda',
+        title: 'Cinque Terre',
+        location: 'Italy',
         grade: 'CUL TURAL RELAX',
-        fees: '$700',
+        fees: '$850',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab dicta maxime id facere, molestiae laboriosam et perferendis beatae maiores ipsa, dolores quae doloribus optio fuga ipsam sint atque repudiandae.'
     },
     {
         id: 7,
         img: sevenImg,
-        title: 'Bora Bora',
-        location: 'New Zelanda',
+        title: 'Angkor Wat',
+        location: 'Cambodia',
         grade: 'CUL TURAL RELAX',
-        fees: '$700',
+        fees: '$760',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab dicta maxime id facere, molestiae laboriosam et perferendis beatae maiores ipsa, dolores quae doloribus optio fuga ipsam sint atque repudiandae.'
     },
     {
         id: 8,
         img: eightImg,
-        title: 'Bora Bora',
-        location: 'New Zelanda',
+        title: 'Taj Mahal',
+        location: 'India',
         grade: 'CUL TURAL RELAX',
-        fees: '$700',
+        fees: '$900',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab dicta maxime id facere, molestiae laboriosam et perferendis beatae maiores ipsa, dolores quae doloribus optio fuga ipsam sint atque repudiandae.'
     },
     {
         id: 9,
         img: nineImg,
-        title: 'Bora Bora',
-        location: 'New Zelanda',
+        title: 'Bali Island',
+        location: 'Indonesia',
         grade: 'CUL TURAL RELAX',
-        fees: '$700',
+        fees: '$500',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab dicta maxime id facere, molestiae laboriosam et perferendis beatae maiores ipsa, dolores quae doloribus optio fuga ipsam sint atque repudiandae.'
     }
 ];
